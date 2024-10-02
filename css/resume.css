@@ -1,0 +1,23 @@
+
+.resume-header {
+  font-size: 1.5vw;
+}
+.resume-sub-header-left {
+  font-size: 1.2vw;
+}
+.resume-sub-header-right {
+  font-size: 1.2vw;
+  float: right;
+}
+.resume-text {
+  font-size: 1.1vw;
+}
+
+div {
+  color: var(--color-5);
+}
+
+img {
+  
+}
+

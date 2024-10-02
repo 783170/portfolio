@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#header").load("../header.html");
+    });
+  </script>
+</head>
+
+
+<body>
+  <div class="page">
+    <div id="header"></div>
+    <div class="content">
+      <div class="container">
+        <div style="width: 60%">
+          <div class="content-header">
+            <p class="title">ENGR230</p>
+          </div>
+          <p style="font-size: 2vw">
+            Digital Design
+          </p>
+          <p style="font-size: 1vw">
+            Spring 2023
+          </p>
+          <p style="font-size: 1.5vw">
+            A description of the class
+          </p>
+        </div>
+        <div style="width: 30%;">
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext-dark">1 / 4</div>
+              <img src="/images/ENGR230-1.png" style="width:100%">
+              <div class="text-dark">Multilevel Detector Schematic</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext-dark">2 / 4</div>
+              <img src="/images/ENGR230-2.png" style="width:100%">
+              <div class="text-dark">Adder Schematic</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext-dark">3 / 4</div>
+              <img src="/images/ENGR230-3.png" style="width:100%">
+              <div class="text-dark">Block Diagram for Verilog Clock</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext-light">4 / 4</div>
+              <img src="/images/ENGR230-4.png" style="width:100%">
+              <div class="text-light">Verilog Clock Output</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div style="width: 60%">
+          <p style="font-size: 2vw">
+            Final Project
+          </p>
+          <p style="font-size: 1.5vw">
+            With detailed decription
+          </p>
+        </div>
+        <div style="width: 30%">
+          <p style="font-size: 2vw">
+            Skills
+          </p>
+          <lu>
+            <li>KMaps</li>
+            <li>State Machines</li>
+            <li>Gate Design and Optimization</li>
+            <li>Verilog</li>
+            <li>Building Counting Circuits</li>
+            <li>Block Diagrams</li>
+          </lu>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+  </div>
+  <div style="height: 1vh"></div>
+</body>
+
+</html>

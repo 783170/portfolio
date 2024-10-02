@@ -1,0 +1,256 @@
+:root {
+  --color-1: #F1E2F3;
+  --color-12: #C0825D;
+  --color-2: #FAF5F0;
+  --color-3: #5E2A65;
+  --color-4: #CE9AD6;
+  --color-5: #2C1B11;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; }
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-1);
+  margin: 0px;
+  padding: 0;
+  min-height: 100%;
+}
+
+.page {
+  background-color: var(--color-2);
+  max-width: 66%;
+  min-height: 95vh;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 20px var(--color-5);
+  margin-bottom: 5vh;
+}
+
+.content {
+  margin: 2%;
+}
+
+#header-text {
+  font-size: 5vw;
+  text-align: center;
+  color: var(--color-2);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+.header {
+  max-width: 100%;
+}
+
+#banner {
+  width: 100%;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+#header-banner-container {
+  max-height: 14vw; 
+  overflow: hidden; 
+  background-color: var(--color-3); 
+  text-align: center; 
+  
+  top: 0;
+  position: fixed;
+  width: 66%;
+  transition: 0.2s;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+}
+.flex-image {
+  align-self: end;
+  width: 30%
+}
+.curve {
+  border-radius: 5%;
+  width: 100%;
+  float: right;
+}
+.flex-text {
+  font-size: 1.5vw;
+  color: var(--color-5);
+  width: 60%;
+}
+
+
+#fun {
+  float: left;
+  color: #DED4C8;
+  text-align: center;
+  padding: 1vw 1vw;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: var(--color-3);
+  top: 14vw;
+  position: fixed;
+  width: 66%;
+  transition: 0.2s;
+}
+#navbar a {
+  float: left;
+  color: var(--color-2);
+  text-align: center;
+  padding: 1vw 0vw;
+  font-size: 1vw;
+  width: 20%;
+  text-decoration: none;
+}
+#dropdown {
+  float: left;
+  overflow: hidden;
+  width: 20%;
+}
+#dropdown #dropbtn {  
+  border: none;
+  outline: none;
+  color: var(--color-2);
+  width: 100%;
+  padding: 1vw 0vw;
+  font-size: 1vw;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+#navbar a:hover, #dropdown:hover #dropbtn {
+  color: var(--color-5);
+  background-color: var(--color-4);
+}
+
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-4);
+  width: 20%;
+  z-index: 1;
+}
+#dropdown-content a {
+  float: none;
+  color: var(--color-2);
+  padding: 5% 5%;
+  width: 90%;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+#dropdown-content a:hover {
+  color: var(--color-5);
+}
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+
+
+.principles {
+  width: 392;
+  height: 620;
+  border: 0px;
+}
+.a {
+  width: 400;
+  height: 400;
+  border: 0px;
+}
+
+.para {
+  font-size: 2vw;
+  color: #65785D;
+  width: 65vw;
+}
+.in-para {
+  font-size: 2vw;
+  color: #65785D;
+  width: 65vw;
+}
+
+.sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: absolute;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color: #65785D;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+li a:hover:not(.active) {
+  background-color: #BD7837;
+  color: #DED4C8;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.download {
+  font-size: 1.5vw;
+  color: var(--color-5);
+  background-color: var(--color-4);
+  border-radius: 5%;
+  border: none;
+  padding: 1%;
+  text-decoration: none;
+}
+.download:hover {
+  color: var(--color-2);
+  background-color: var(--color-3);
+}
+.title {
+  text-align: left;
+  font-size: 3vw;
+  color: var(--color-5);
+}
+.subtitle{
+  text-align: center;
+  font-size: 2vw;
+  color: #65785D;
+}
+
+.backk {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+.back a {
+  display: block;
+  color: #65785D;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+.back a:hover:not(.active) {
+  background-color: #BD7837;
+  color: #DED4C8;
+}
